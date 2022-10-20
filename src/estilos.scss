@@ -1,0 +1,40 @@
+$color-primary: #FF9700 ;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html, body, #root {
+    height: 100%;
+} 
+
+#mainAndHeader {
+    background-color: $color-primary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 0.5rem 1rem;
+}
+
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+footer{
+    background-color: $color-primary;
+    padding: 1rem;
+    text-align: center;
+}
