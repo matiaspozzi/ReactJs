@@ -7,7 +7,9 @@ import Footer from "./footer"
 function App() {
     return (
         <>
-            <Header/>
+            <Header 
+                    nombre="Tutor/a" 
+                    apellido="Coder"/>
             <Main/>
             <Footer/>
         </>

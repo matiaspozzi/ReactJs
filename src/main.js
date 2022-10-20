@@ -3,8 +3,8 @@ import React from "react";
 const Main = () => {
     return (
         <main>
-            <h2>Home</h2>
-            <img src="/logo192.png" alt=""/>
+            <h2>Proximamente se podra encontrar un E-Comerce sobre Instrumentos Electricos orientados a la produccion y DJing</h2>
+            
 
         </main>
 

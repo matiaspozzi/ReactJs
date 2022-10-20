@@ -1,10 +1,15 @@
 import React from "react";
 import Nav from "./Nav";
 
-function Header() {
+   
+
+function Header(parameter) {
+     let nombreCompleto = parameter.nombre + " de " + parameter.apellido
+    
     return (
         <header id="mainAndHeader">
-            <h1>Hola Mundo</h1>
+            <h1>HouseMusic</h1>
+            <p>Bienvenido {nombreCompleto} ! </p>
             <Nav/>
         </header>
     )
