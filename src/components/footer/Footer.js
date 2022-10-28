@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from './Nav'
+import NavBar from '../navBar/NavBar'
 
 const Footer = () => {
   return (
@@ -12,9 +12,7 @@ const Footer = () => {
         <div>
             <p>Copyright © 1999-2022 HouseMusic S.R.L</p>
         </div>
-        <div>
-            <Nav/>
-        </div>
+        
     </footer>
   )
 }

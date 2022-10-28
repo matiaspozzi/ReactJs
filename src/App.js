@@ -1,7 +1,9 @@
 import React from "react"
-import Header from "./Header"
-import Main from "./main"
-import Footer from "./footer"
+import Header from "./components/header/itemListContainer"
+import Main from "./components/main/Main"
+import Footer from "./components/footer/Footer"
+import cartWidget from "./components/main/cartWidget"
+
 
 
 function App() {
