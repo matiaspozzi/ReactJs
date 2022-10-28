@@ -4,13 +4,13 @@ import cart from "../img/cart.svg"
 const Nav = () => {
     return (
         <nav>
-            <a class="link" href="#">Controladoras de sonido</a>
-            <a class="link" href="#">Monitores de audio</a>
-            <a class="link" href="#">Controladores Midi</a>
+            <a className="link" href="#">Controladoras de sonido</a>
+            <a className="link" href="#">Monitores de audio</a>
+            <a className="link" href="#">Controladores Midi</a>
             <div>
-            <img src="../img/cart.svg" alt="Icono carrito" />
             </div>
             
+            <img src= {cart} alt="Icono carrito" />
         </nav>
     
     

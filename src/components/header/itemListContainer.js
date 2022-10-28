@@ -10,7 +10,7 @@ function Header(parameter) {
     return (
         <header id="mainAndHeader">
             <div>
-                <img src="../img/housemusic.png" alt="IconoHm" />
+                <img src= {housemusic} alt="IconoHm" />
             </div>
             <p>Bienvenido {nombreCompleto} ! </p>
             <NavBar />
@@ -18,5 +18,4 @@ function Header(parameter) {
         </header>
     )
 }
-
 export default Header
