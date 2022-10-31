@@ -41,8 +41,13 @@ footer{
 }
 
 
-.link {
-    padding: 5px;
-    justify-content: space-between;
+.orderNav {
+    display: flex;
+    align-content: space-between;
     
 }
+
+.imgHouse{
+    max-width: 48px;
+}
+

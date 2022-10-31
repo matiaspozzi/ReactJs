@@ -10,7 +10,7 @@ function Header(parameter) {
     return (
         <header id="mainAndHeader">
             <div>
-                <img src= {housemusic} alt="IconoHm" />
+                <img className="imgHouse" src= {housemusic} alt="IconoHm" />
             </div>
             <p>Bienvenido {nombreCompleto} ! </p>
             <NavBar />
