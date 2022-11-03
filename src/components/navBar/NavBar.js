@@ -1,22 +1,24 @@
 import React from 'react'
 import cart from "../img/cart.svg"
+import { Link } from "react-router-dom"
 
 const Nav = () => {
     return (
         <nav className="orderNav">
-            <a className="link" href="#">Controladoras de sonido</a>
-            <a className="link" href="#">Monitores de audio</a>
-            <a className="link" href="#">Controladores Midi</a>
+            <Link to="/Controladoras de sonido">Controladoras de sonido</Link>
+            <Link to="Monitores de Audio">Monitores de Audio</Link>
+            <Link to="Controladores Midi">Controladores Midi</Link>
             <div>
+            <Link to="/Carrito">
+               <img className="img" src={cart} alt="Icono carrito" />
+            </Link>
             </div>
-            
-            <img className="img" src= {cart} alt="Icono carrito" />
         </nav>
-    
-    
-    
-    
-        )
+
+
+
+
+    )
 }
 
 export default Nav

@@ -1,8 +1,8 @@
 import React from 'react';
 
 
-const CartWidget = () => {
+const cartWidget = () => {
     
 }
 
-export default CartWidget
+export default cartWidget
