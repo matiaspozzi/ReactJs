@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 
 function Header(parameter) {
-    let nombreCompleto = parameter.nombre + " de " + parameter.apellido
+    
 
     return (
         <header id="mainAndHeader">
@@ -15,9 +15,9 @@ function Header(parameter) {
                     <img className="imgHouse" src={housemusic} alt="IconoHm" />
                 </Link>
             </div>
-            <p>Bienvenido {nombreCompleto} ! </p>
+            
             <NavBar />
-            <cartWidget />
+            
         </header>
     )
 }

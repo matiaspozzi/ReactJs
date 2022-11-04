@@ -37,6 +37,7 @@ footer{
     background-color: $color-primary;
     padding: 1rem;
     text-align: center;
+    font-size: 0.7rem;
 
 }
 
@@ -45,9 +46,16 @@ footer{
     display: flex;
     align-content: space-between;
     
+    
 }
 
 .imgHouse{
     max-width: 48px;
 }
 
+.underline{
+    text-decoration: none;
+    margin-left: 1rem;
+    color: black;
+    
+}

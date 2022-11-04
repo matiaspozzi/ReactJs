@@ -1,8 +1,14 @@
-import React from 'react';
+import React from "react";
 
-
-const cartWidget = () => {
-    
+const CartWidget = () => {
+    const cantidadEnCarrito = 3
+    return(
+        <div className="content-carrito">
+        <span>shopping_cart</span>
+        <span>{cantidadEnCarrito}</span>
+        </div>
+        
+    )
 }
 
-export default cartWidget
+export default CartWidget
