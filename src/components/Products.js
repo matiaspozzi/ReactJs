@@ -28,7 +28,7 @@ export const productos = [
    
    {id:4,
     title:"3 Mackie Cr3-x",
-    category:"Monitores de Audio",
+    category:"monitores de audio",
     img:"./img/3-Mackie-Cr3-x.png",
     price: 60000,
     detail: "lorem ipsum lorem lorem"
@@ -36,7 +36,7 @@ export const productos = [
 
     {id:5,
     title:"AMidiplus Mi5 Bluetooth Blanco Par",
-    category:"Monitores de Audio",
+    category:"monitores de audio",
     img:"./img/Midiplus-Mi5-Bluetooth-Blanco-Par.png",
     price: 80000,
     detail: "lorem ipsum lorem lorem"
@@ -45,7 +45,7 @@ export const productos = [
 
    {id:6,
     title:"Presonus Eris E3 5",
-    category:"Monitores de Audio",
+    category:"monitores de audio",
     img:"./img/Presonus-Eris-E3.5.png",
     price: 90000,
     detail: "lorem ipsum lorem lorem"
@@ -54,7 +54,7 @@ export const productos = [
    
    {id:7,
     title:"Akai Mpk Mini 25",
-    category:"controladores Midi",
+    category:"controladores midi",
     img:"./img/Akai-Mpk-Mini-25.png",
     price: 55000,
     detail: "lorem ipsum lorem lorem"
@@ -63,7 +63,7 @@ export const productos = [
 
    {id:8,
     title:"Arturia Keylab 49 Mkii",
-    category:"controlador Midi",
+    category:"controlador midi",
     img:"./img/Arturia-Keylab-49-Mkii.png",
     price: 95000,
     detail: "lorem ipsum lorem lorem"
@@ -72,7 +72,7 @@ export const productos = [
 
    {id:9,
     title:"Minilab Mkii Arturia",
-    category:"controlador Midi",
+    category:"controlador midi",
     img:"./img/Minilab-Mkii-Arturia.png",
     price: 100000,
     detail: "lorem ipsum lorem lorem"
