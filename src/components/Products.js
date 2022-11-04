@@ -54,7 +54,7 @@ export const productos = [
    
    {id:7,
     title:"Akai Mpk Mini 25",
-    category:"controladores midi",
+    category:"controlador midi",
     img:"./img/Akai-Mpk-Mini-25.png",
     price: 55000,
     detail: "lorem ipsum lorem lorem"

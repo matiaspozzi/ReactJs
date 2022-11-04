@@ -11,7 +11,7 @@ function Header(parameter) {
     return (
         <header id="mainAndHeader">
             <div>
-                <Link to="Home">
+                <Link to="/">
                     <img className="imgHouse" src={housemusic} alt="IconoHm" />
                 </Link>
             </div>

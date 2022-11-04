@@ -5,19 +5,15 @@ import { Link } from "react-router-dom"
 const Nav = () => {
     return (
         <nav className="orderNav">
-            <Link className='underline' to="/productos/controladoras de sonido">Controladoras de sonido</Link>
-            <Link className='underline' to="/productos/monitores de Audio">Monitores de Audio</Link>
-            <Link className='underline' to="/productos/controladores Midi">Controladores Midi</Link>
+            <Link className='underline' to="/products/controlador de audio">Controladoras de sonido</Link>
+            <Link className='underline' to="/products/monitores de audio">Monitores de Audio</Link>
+            <Link className='underline' to="/products/controlador midi">Controladores Midi</Link>
             <div>
             <Link to="/Carrito">
                <img className="img" src={cart} alt="Icono carrito" />
             </Link>
             </div>
         </nav>
-
-
-
-
     )
 }
 
