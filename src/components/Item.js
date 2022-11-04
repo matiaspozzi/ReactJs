@@ -17,5 +17,6 @@ function Objets({title, price}) {
   );
 }
 
+
 export default Objets;
 

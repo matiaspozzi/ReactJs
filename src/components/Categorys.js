@@ -15,7 +15,7 @@ export const getProductsByCategoryId = (id) => {
 
     let pedidoProductos = new Promise ((response) => {
         setTimeout(() =>{
-            response(productos.filter(item=>item.Category == id))
+            response(productos.filter(item=>item.category == id))
         }, 2000)
     })
     return pedidoProductos
