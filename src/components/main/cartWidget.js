@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import React from "react";
-import { contexto } from "../../App";
+import { contexto } from "../ContextProvider";
 import { Link } from "react-router-dom"
 
 const CartWidget = () => {
