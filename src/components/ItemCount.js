@@ -2,7 +2,22 @@ import React, {useState} from 'react';
 
 const ItemCount = () => {
     
-    const [count, setCounter] = useState(0)
+    const [count, setCount] = useState(0)
+    
+    const addProduct = () => {
+        setCount(count + 1)
+    }
+    const subtractProduct = () => {
+        if(count > 0){
+            setCount(count -1)
+        }
+        else{
+            console.log("tienes que seleccionar al menos 1 producto")
+        }
+    }
+    const confirmarCarrito = (e) => {
+        console.log(e)
+    }
     
     return (
     <div>
@@ -10,13 +25,19 @@ const ItemCount = () => {
             
         <div className='counter-box'>
 
-            <button className='counter-btn' onClick={()=> {setCounter(count -1 )}}> - </button>
+            <button className='counter-btn' onClick={()=> {subtractProduct(count -1 )}}> - </button>
 
             <p className='counter-num'>{count}</p>
 
-            <button className='counter-btn' onClick={()=> {setCounter(count + 1)}} > + </button>
+            <button className='counter-btn' onClick={()=> {addProduct(count + 1)}} > + </button>
         </div>
+        
+        <button className='confirm-btn' onClick={confirmarCarrito}>Confirmar</button>
+    
+
     </div>
+
+    
 
     )
 }
