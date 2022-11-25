@@ -9,11 +9,10 @@ const CartWidget = () => {
     
     return (
         
-        <Link to="/Carrito">
             <div className="content-carrito">
                 <span>{valorDelContexto.cantidad}</span>
             </div>
-        </Link>
+        
     )
 }
 

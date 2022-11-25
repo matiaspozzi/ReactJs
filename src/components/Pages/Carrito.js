@@ -2,7 +2,21 @@ import React from 'react'
 
 const Carrito = () => {
   return (
-    <div>Carrito</div>
+    <div>
+        <form>
+            <div>
+                <input type="text"/>
+            </div>
+            <div>
+              <input type="text"/>
+            </div>
+        
+          <button>guardar</button>
+        
+        </form>
+
+
+    </div>
   )
 }
 

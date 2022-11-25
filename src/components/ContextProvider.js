@@ -12,7 +12,7 @@ const ContextProvider = ({children}) => {
         
     ])
     
-    const [total, setTotal] = useState(7)
+    const [total, setTotal] = useState()
    
     
     const vaciarCarrito = () => {

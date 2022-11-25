@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom"
 import ItemListContainer from "../itemListContainer/ItemListContainer";
 import ItemDetailContainer from '../ItemDetailContainer';
+import Carrito from "../Pages/Carrito";
 
 
 const Main = () => {
@@ -20,6 +21,7 @@ const Main = () => {
 
                 <Route path='/item/:id' element={<ItemDetailContainer />} />
 
+                <Route path='/Carrito' element={<Carrito />} />
                
 
             </Routes>
