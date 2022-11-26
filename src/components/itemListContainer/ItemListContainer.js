@@ -1,8 +1,12 @@
+
 import React from "react";
 import ItemList from "./ItemList";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getProducts, getProductsByCategoryId } from "../Categorys";
+import { db } from "../../firebase";
+import { collection, documentId, getDocs, query, where } from "firebase/firestore";
+
 
 
 const ItemListContainer = () => {
@@ -13,28 +17,39 @@ const ItemListContainer = () => {
 
     useEffect(() => {
 
+        const productosCollection = collection(db,"Products")
+
         setItems([])
 
         if(category){
-            getProductsByCategoryId(category) 
-            .then(respuesta => {
-                setItems(respuesta)
-            })
-            .catch(error => {
-                console.log(error)
-            })
+           
+            
 
+            const filtro = query(productosCollection,where("category","==",category))
+            const consulta = getDocs(filtro)
+
+            consulta
+                .then((resultado) => {
+                    console.log(resultado)
+                })
+                .catch((error) =>{
+                    console.log(error)
+                })
+
+                
         }else{
+            
+            const consulta = getDocs(productosCollection)
+            consulta
+                .then((resultado) => {
+                    const productos = resultado.docs.map(doc => ({ ...doc.data(), id: doc.id }))
+                    setItems(productos)
+                })
+                .catch((error) => {
+                    console.log(error)
+                })
 
-            getProducts()
-            .then((respuesta) => {
-                setItems(respuesta)
-            })
-            .catch((error) => {
-                console.log(error)
-            })
         }
-
     }, [category])
 
     return (

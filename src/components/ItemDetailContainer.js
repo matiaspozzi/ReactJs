@@ -3,6 +3,8 @@ import ItemDetail from './ItemDetail';
 import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import { getDetailsById } from "./Categorys";
+import { db } from '../firebase';
+
 
 
 
