@@ -1,7 +1,7 @@
 import React from 'react'
 import cart from "../img/cart.svg"
 import { Link } from "react-router-dom"
-import CartWidget from '../main/CartWidget'
+import CartWidget from "../main/CartWidget"
 
 const Nav = () => {
     return (
