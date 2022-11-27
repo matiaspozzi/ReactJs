@@ -1,15 +1,20 @@
 import { addDoc, collection, serverTimestamp  } from "firebase/firestore"
-import { useRef, useState } from "react"
+import { useContext, useRef, useState } from "react"
 import React from 'react'
 import { db } from "../../firebase"
 import { useCarrito } from "../ContextProvider"
+import {contexto} from "../ContextProvider"
+
+
+
 
 
 
 const Carrito = () => {
-
-
+        
+     
   const valorDelContexto = useCarrito()
+  
   const refName = useRef() 
   const refAge = useRef()
   const [id, setId] = useState("")
@@ -28,7 +33,7 @@ const Carrito = () => {
 
       const ordersCollection = collection(db, "orders")
       const consulta = addDoc(ordersCollection,orden)
-
+      
       consulta
           .then((docRef) => {
               setId(docRef.id)
@@ -36,8 +41,11 @@ const Carrito = () => {
           .then((error)=>{
               console.log(error)
           })
-  }
-
+          
+        }
+ 
+        const { products, cantidadTotal } = valorDelContexto; 
+    
 
   return (
       <div>
