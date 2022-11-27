@@ -17,7 +17,7 @@ const ItemListContainer = () => {
 
     useEffect(() => {
 
-        const productosCollection = collection(db,"Products")
+        const productosCollection = collection(db,"productos")
 
         setItems([])
 
@@ -29,8 +29,12 @@ const ItemListContainer = () => {
             const consulta = getDocs(filtro)
 
             consulta
-                .then((resultado) => {
-                    console.log(resultado)
+            .then((resultado) => {
+                const productos = resultado.docs.map((doc) => ({
+                    ...doc.data(),
+                    id: doc.id,
+                }));
+                setItems(productos);
                 })
                 .catch((error) =>{
                     console.log(error)

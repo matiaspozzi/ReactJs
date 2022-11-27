@@ -1,5 +1,6 @@
 import { productos } from "./Products"
 
+
 export const getProducts = () => {
 
     let pedidoProductos = new Promise((response) => {

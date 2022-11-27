@@ -6,9 +6,9 @@ import CartWidget from '../main/CartWidget'
 const Nav = () => {
     return (
         <nav className="orderNav">
-            <Link className='underline' to="/products/controlador de audio">Controladoras de sonido</Link>
-            <Link className='underline' to="/products/monitores de audio">Monitores de Audio</Link>
-            <Link className='underline' to="/products/controlador midi">Controladores Midi</Link>
+            <Link className='underline' to="/products/controladordeaudio">Controladoras de sonido</Link>
+            <Link className='underline' to="/products/monitoresdeaudio">Monitores de Audio</Link>
+            <Link className='underline' to="/products/controladormidi">Controladores Midi</Link>
             <div>
             <Link to="/Carrito">
                <img className="img" src={cart} alt="Icono carrito" />

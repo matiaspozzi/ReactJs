@@ -18,7 +18,7 @@ const Carrito = () => {
       e.preventDefault()
       const orden = {
           buyer: {
-              name: "Horacio",
+              name: "Matias Pozzi",
               phone: "123456789",
           },
           products: [],
